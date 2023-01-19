@@ -76,6 +76,7 @@ async function getUser(userName) {
                                     </div>
                             </div>
                         </div>
+                        <h2 class="text-center mb-5">Latest repositories</h2>
                         <div class="flex flex-col items-center">
                             ${reposHtml}
                         </div>
