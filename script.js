@@ -87,7 +87,7 @@ function landingPage() {
         document.getElementById('inject').innerHTML = `
         <main id="main" class="flex flex-col items-center">
             <div class="flex items-center justify-between p-1 w-5/6 h-12 border-2 border-[#252931] rounded-lg">
-                <input type="text" class="bg-transparent outline-0 w-4/6 text-black h-full p-2 search">
+                <input type="text" class="bg-transparent outline-0 w-4/6 text-black h-full p-2 search" placeholder="search user">
                 <button class="bg-[#252931] w-2/6 h-full rounded-lg searchBtn" type="button">SEARCH</button>
             </div>
             <div class="users w-full flex flex-col items-center">
