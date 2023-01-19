@@ -1,10 +1,6 @@
 async function getUsers(searchQuery) {
     if(searchQuery != '' && searchQuery != undefined) {
-        let users = await fetch(`https://api.github.com/search/users?q=${searchQuery}`, {
-            headers: {
-                authorization: 'token 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'
-            }
-        });
+        let users = await fetch(`https://api.github.com/search/users?q=${searchQuery}`);
 
         let res = await users.json();
 
@@ -29,17 +25,9 @@ async function getUsers(searchQuery) {
 
 async function getUser(userName) {
     if(userName != '' && userName != undefined) {
-        let user = await fetch(`https://api.github.com/users/${userName}`, {
-            headers: {
-                authorization: 'token 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'
-            }
-        });
+        let user = await fetch(`https://api.github.com/users/${userName}`);
 
-        let repos = await fetch(`https://api.github.com/users/${userName}/repos`, {
-            headers: {
-                authorization: 'token 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'
-            }
-        });
+        let repos = await fetch(`https://api.github.com/users/${userName}/repos`);
 
         let res = await user.json();
         let resRepos = await repos.json();
